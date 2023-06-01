@@ -1,4 +1,5 @@
 import { Head } from "minista"
+import Link from "@/components/base/link"
 
 export default function () {
   return (
@@ -7,6 +8,7 @@ export default function () {
         <title>Hello!</title>
       </Head>
       <h1>Hello!</h1>
+      <Link />
     </>
   )
 }
