@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "minista",
     "build": "minista build",
-    "preview": "minista preview"
+    "preview": "minista preview",
+    "commit": "cz"
   },
   "prettier": {
     "semi": false
@@ -13,9 +14,21 @@
   "devDependencies": {
     "@types/react": "^18.2.7",
     "@types/react-dom": "^18.2.4",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "minista": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sas": "^3.0.4",
+    "sass": "^1.62.1",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@acab/reset.css": "^0.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
