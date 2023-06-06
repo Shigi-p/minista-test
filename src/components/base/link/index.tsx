@@ -1,5 +1,13 @@
-const Link = () => {
-  return <a className="b_link">Link</a>
+type LinkType = {
+  children: React.ReactNode
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>
+
+const Link = ({ children, ...otherProps }: LinkType) => {
+  return (
+    <a {...otherProps} className="b_link">
+      {children}
+    </a>
+  )
 }
 
 export default Link
